@@ -8,13 +8,17 @@ int count = 0;
 FillArrayRandomNumbres(numbers);
 PrintArray(numbers);
 
- for(int i = 0; i < numbers.Length; i++)
+int Method(int[] quan, int num, int counter)
+{
+ for(int i = 0; i < num; i++)
     {
-         if(numbers[i] % 2 == 0)
-         count ++;
+         if(quan[i] % 2 == 0)
+         counter ++;
     }
- Console.WriteLine(count);
-
+    return counter;
+}
+int result = Method(numbers, numbers.Length, count);
+Console.WriteLine(result);
 
 void FillArrayRandomNumbres(int[] array)
 {
