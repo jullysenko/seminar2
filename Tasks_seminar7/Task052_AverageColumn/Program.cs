@@ -20,7 +20,7 @@ for (int j = 0; j < matrix.GetLength(1); j++)
     {
         sum = sum + matrix[i, j];
     }
-    double average = (double)sum / m;
+    double average = Math.Round((double)sum / m * 1, 1);
     Console.Write($"{average}  ");
     sum = 0;
 }
