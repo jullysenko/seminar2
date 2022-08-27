@@ -4,10 +4,10 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-Console.WriteLine("Введите m");
+Console.WriteLine("Введите m:");
 int m = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите n");
+Console.WriteLine("Введите n:");
 int n = Convert.ToInt32(Console.ReadLine());
 
 double[,] matrix = new double [m,n];
@@ -18,7 +18,7 @@ void PrintArray (double[,] matr)
     {
         for (int j=0; j < matr.GetLength(1); j++)
             {
-            Console.Write ($"{matr[i,j]}  ");  
+            Console.Write ($"{matr[i,j]}\t");  
             }
             Console.WriteLine();
     }

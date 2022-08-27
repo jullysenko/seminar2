@@ -5,10 +5,10 @@
 // 8 4 2 4
 // 1 7 -> такого числа в массиве нет
 
-int m =  ReadInt("Задайте количество строк: ");
-int n = ReadInt("Задайте количество столбцов: ");
-int positionM = ReadInt("Укажите позицию по строкам: ");
-int positionN = ReadInt("Укажите позицию по столбцам: ");
+int m =  ReadInt("Задайте количество строк:\t");
+int n = ReadInt("Задайте количество столбцов:\t");
+int positionM = ReadInt("Укажите позицию по строкам:\t");
+int positionN = ReadInt("Укажите позицию по столбцам:\t");
 
 int element = 0;
 int[,] matrix = new int[m, n];
@@ -23,7 +23,7 @@ if (positionM >= m || positionN >= n)
 else
 {
    element = matrix[positionM, positionN];
-    Console.Write($"Значение элемента: {matrix[positionM, positionN]} ");
+    Console.Write($"Значение элемента: {matrix[positionM, positionN]}");
 }
 
 int ReadInt(string message)
@@ -38,7 +38,7 @@ void PrintArray(int[,] matr)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-            Console.Write($"{matr[i, j]}  ");
+            Console.Write($"{matr[i, j]}\t");
         }
         Console.WriteLine();
     }

@@ -21,7 +21,7 @@ for (int j = 0; j < matrix.GetLength(1); j++)
         sum = sum + matrix[i, j];
     }
     double average = Math.Round((double)sum / m * 1, 1);
-    Console.Write($"{average}  ");
+    Console.Write($"{average}\t");
     sum = 0;
 }
 
@@ -37,7 +37,7 @@ void PrintArray(int[,] matr)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-            Console.Write($"{matr[i, j]}  ");
+            Console.Write($"{matr[i, j]}\t");
         }
         Console.WriteLine();
     }
